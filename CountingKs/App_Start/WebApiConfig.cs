@@ -33,6 +33,7 @@ namespace CountingKs
 
       config.Routes.MapHttpRoute(
           name: "DiaryEntries",
+
           routeTemplate: "api/user/diaries/{diaryid}/entries/{id}",
           defaults: new { controller = "diaryentries", id = RouteParameter.Optional }
       );
